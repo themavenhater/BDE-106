@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>3 | YZ</title>
+
+
+<link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style2.css"/>
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/animation.css"/>
+<link rel="stylesheet" href="css/style3.css" />
+<link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input:checkbox, input:radio, input:file, select").uniform();
+      });
+    </script>
+</head>
+<body>
+
+  <div id="header_fixed" class="fadeIn animation_delay"> <!--animation menu + menu fixe -->
+  <nav class="top-bar" data-topbar role="navigation"> <!-- menu fixe -->
+    <ul class="title-area">
+
+       <li id="login" class="active">
+          <a id="login-trigger"  href="#" class="active">
+            Log in <span>▼</span>
+          </a>
+          <div id="login-content" >
+            <form>
+              <fieldset class="login1" id="inputs">
+                <input id="username" type="email" name="Email" placeholder="Your email address" required>
+                <input id="password" type="password" name="Password" placeholder="Password" required>
+              </fieldset>
+              <fieldset id="actions">
+                <input type="submit" id="submit" value="Log in">
+                <label><input type="checkbox" checked="checked"> Keep me signed in</label>
+              </fieldset>
+            </form>
+          </div>
+        </li>
+
+      <li class="name">
+        <h1><a id="logo" href="#"><img src="img/logo.png" width="140"></a></h1> <!-- logo à gauche du menu (il faudrait mettre un vrai logo) -->
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+    <section class="top-bar-section" data-options="sticky_on">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active"><a href="index.html">Présentation</a></li>
+        <li class="active"><a href="event.html">Evenements 3YZ</a></li>
+        <li class="active"><a href="form.html">Inscription</a></li>
+        <li class="active"><a href="#">Boutique</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+
+
+<div class="row">
+<div class="large-12 columns">
+
+<article>
+<h1>Ajouter un évènement:</h1>
+<form>
+	<ul>
+        <li>
+        	<label for="name">Votre Nom:</label>
+            <input type="text" size="40" id="name" />
+        </li>
+        <li>
+            <label for="name">Votre Prénom:</label>
+            <input type="text" size="40" id="name" />
+        </li>
+        <li>
+          <label for="email">Votre Email:</label>
+            <input type="email" size="40" id="email" />
+        </li>
+           <li>
+            <label for="name">Matricule:</label>
+            <input type="text" size="40" id="name" />
+        </li>
+      
+        <li id="eve">
+            <label for="car" >Quel type d'évènement:</label>
+            <select id="car">
+                <option>Culturel</option>
+                <option>Festif</option>
+                <option>Sportif</option>
+                <option>Voyage</option>
+                <option>A l'école</option>
+            </select>
+        </li>
+         <li>
+            <label for="name">Prix:</label>
+            <input type="text" size="40" id="name" />
+        </li>
+        <li id="ava">
+            <label>Photo de description:</label>
+            <input type="file" />
+        </li>
+
+
+
+
+        
+        
+        <fieldset>
+        <legend>Le lieu</legend>
+        <p>
+          <label for"pays" class="fixedlabel">Ville :</label>
+          <select name="chpsville" >
+              <option value="">Ville...</option>
+              <option value="ALG">Alger</option>
+              <option value="ORN">Oran</option>
+              <option value="BEJ">Bejaia</option>>
+              <option value="TIM">Timimoun</option>
+              <option value="TIP">Tipaza</option>
+              <option value="GHA">Gherdaia</option>
+              <option value="TIZ">Tizi-Ouzou</option>
+              <option value="ANN">Annaba</option>
+              <option value="JIJ">Jijel</option>
+              <option value="BOU">Boumerdes</option>
+              <option value="BLD">Blida</option>
+              <option value="EOU">El-Oued</option>
+              <option value="CONS">Constantine</option>
+      
+
+            <select name="city">
+          </select>
+        </p>  
+      </fieldset>
+
+      <li>
+          <label for="message">Description de l'évènement:</label>
+            <textarea cols="50" rows="5" id="message"></textarea>
+    </li>
+        
+	</ul>
+    <p>
+
+        <button type="reset" class="right">Ajouter</button>
+    </p>
+</form>
+</article>
+</div>
+</div>
+</select>
+</p>
+</fieldset>
+</ul>
+</form>
+</article>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#login-trigger').click(function(){
+  $(this).next('#login-content').slideToggle();
+  $(this).toggleClass('active');
+
+  if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+    else $(this).find('span').html('&#x25BC;')
+  })
+});
+</script>
+</body>
+</html>

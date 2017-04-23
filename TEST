@@ -1,0 +1,37 @@
+            
+            
+            
+            <figure class="mix work-item echarpe 500">
+					<img src="img/works/item-7.jpg" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Labore et dolore magnam</h4>
+						<p>Photography</p>
+					</figcaption>
+				</figure>
+				<?php while($a = $articles->fetch()) { ?>
+          <?php $rows[]=$a ?>
+				<figure class="mix work-item <?= $a['type'] $a['prix'] ?> ">
+					<img src="boutique/<?= $a['id'] ?>" alt="boutique/<?= $a['reference'] ?>">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Write Your Image Caption Here" href="boutique/<?= $a['id'] ?>">
+						<i class="fa fa-eye fa-lg"></i></a>
+						<h4><?= $a['nom'] ?></h4>
+						<p><?= $a['descr'] ?></p>
+					</figcaption>
+				</figure>
+				
+				<?php while($a = $articles->fetch()) { ?>
+          <?php $rows[]=$a ?>
+                  <figure class="mix work-item branding">
+                      <img src="img_event/<?= $a['id'] ?>.jpg"  alt="" width="200" height="200">
+                      <figcaption class="overlay">
+                       <a  href="activity.php?id=<?= $a['id'] ?>" class="iframe"><i class="fa fa-eye fa-lg"></i></a>
+                          <h4>Labore et dolore magnam</h4>
+                          <p>Photography</p>
+                      </figcaption>
+                  </figure>
+              <?php } ?>
+			
+		
+	

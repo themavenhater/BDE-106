@@ -1,0 +1,385 @@
+/*HEADER FIXER*/
+#header {
+    position: fixed;
+		display: block;
+		width: 100%;
+		background: #333;
+		text-align: center;
+		color: #f2f2f2;
+    z-index: 9;
+}
+
+#header_fixed {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: #333;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+#header_fixed {
+    top: 0px;
+}
+
+h1 {
+	font-size: 5em;
+	font-family: 'arial' !important;
+	color: #fb5555;
+	margin:0;
+	padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+	text-align:center;
+}
+
+#video_home {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  background-image: url('img/Y_akou.png');
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index:0;
+}
+
+
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section0 .layer {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	left: 0;
+	top: 43%;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0 {
+	overflow: hidden;
+}
+
+h3 {
+  color: red !important;
+}
+
+h4 {
+  color: white!important;
+}
+
+#hexo {
+   font-size: 200px;
+    opacity: 1;
+}
+
+#hexo span{
+    color:#a10a0a; 
+}
+
+.top {
+    position: relative !important;
+    top: -300px !important;
+}
+
+#drone {
+	z-index: 9999;
+}
+
+.better_text {
+	background-color: black;
+	width: 400px;
+	opacity: 0.3;
+	margin-top: -200px !important;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.boutton {
+  text-indent: 0;
+  border: 1px solid white;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 260px;
+  text-decoration: none;
+  text-align: center;
+  z-index: 3 !important;
+}
+
+.boutton:hover {
+  color: #a10a0a;
+  background-color: transparent;
+  border-color: #a10a0a;
+  transition: all 0.5s ease;
+}
+
+.boutton_dark {
+  text-indent: 0;
+  border: 1px solid black;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 260px;
+  text-decoration: none;
+  text-align: center;
+  z-index: 3 !important;
+}
+
+.boutton_dark:hover {
+  color: #a10a0a;
+  background-color: transparent;
+  border-color: #a10a0a;
+  transition: all 0.5s ease;
+}
+
+.title_home {
+	z-index: 9999;
+}
+
+.team-title {
+    margin-bottom: 60px;
+}
+
+#video_fly {
+	width: 500px;
+}
+
+/*#drone {
+	margin-top: 30px !important;
+}*/
+
+#fp-nav {
+  color: white !important;
+  background-color: !important
+}
+
+.layer {
+  margin-top: 230px !important;
+}
+
+#logo {
+  color: #a10a0a;
+}
+
+.float {
+  float: left;
+}
+
+h2 {
+  color: #a10a0a!important;
+}
+
+h5 {
+  color: black!important;
+  font-size: 30px;
+}
+
+
+
+p {
+  color: black !important;
+}
+
+.resize {
+  margin-top: 38px !important;
+}
+
+.hover{
+    margin-right: 50px;
+}
+
+.hover:hover {
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+#reseaux{
+    display: inline !important;
+    width: 30px;
+    height: 100px;
+}
+
+.ariane {
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #EDEDED;
+  border-top: solid 1px #EDEDED;
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.float_ariane {
+  float: left;
+  margin-left: 8px;
+}
+
+.footer_nav {
+  background-color: #E3E3E3;
+  width: 100%;
+  height: 320px;
+}
+
+.footer_align {
+  margin-right: 20%;
+}
+
+.footer_link {
+  margin-top: 20px;
+  color: black;
+}
+
+.footer_link:hover {
+  color: #f04124;
+}
+
+.kickstarrter {
+  position: relative;
+  top: -96px;
+}
+
+.footer_copyright {
+  background-color: #34495e;
+  height: 500px;
+}
+
+#title_entreprise {
+  margin-top: 50px !important;
+}
+
+.spacing {
+  margin-top: 10px; 
+}
+
+.spacing_100 {
+  margin-top: 100px; 
+}
+
+.spacing_50 {
+  margin-top: 50px; 
+}
+
+.spacing_20 {
+  margin-top: 20px; 
+}
+
+.team {
+  margin-left: 300px;
+}
+
+.view {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1025px) {
+.hidden {
+    display: none;
+  }
+
+.view {
+  display: block !important;
+}
+
+.footer_link {
+  font-size: 14px;
+  margin-top: 10px !important;
+}
+
+#title_entreprise {
+  margin-top: 0px !important;
+}
+
+.number {
+  color: black !important;
+  font-size: 25px !important;
+}
+
+
+
+/*joindre */
+
+#titre{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+}
+
+#inscription{
+  width:500px;
+  margin:auto;
+
+}
+
+.fixedlabel{
+  display:inline-block;
+  width:180px;
+  padding-right:20px;
+  text-align: right;
+}
+#inscription p{
+  margin: 10px 0px;
+}
+input[type=text]{
+  padding:4px;
+  border:thin solid #4285F4;
+  width:285px;
+}
+.labelRadio{
+  padding-right: 40px;
+}
+select{
+  width:295px;
+  text-align: center;
+  padding:4px;
+  border:thin solid #4285F4;
+}
+#inscription textarea{
+  width:490px;
+  height:150px;
+  padding:4px;
+  border:thin solid #4285F4;
+}
+.spanCGV{
+  display:inline-block;
+  float:left;
+  margin-top: 15px;
+}
+#inscription input[type=submit]{
+  padding:15px 20px;
+  font-size: 18px;
+  color:#4285F4;
+  background:#FFF;
+  border:thin solid #4285F4;
+  float:right;
+  margin-bottom: 40px;
+}
+#tableauClasse{
+  width:600px;
+  margin:auto;
+}
+#tableauClasse td, #tableauClasse th{
+  border:thin dotted #4285F4;
+  padding:4px;
+}
+tr:nth-child (even){
+  background: #4285F4
+}
